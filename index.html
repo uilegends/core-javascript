@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Checkbox and Radio Submit Using Bootstrap</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <div class="container">
+  <h3 class="text-center pt-3 pb-3">Checkbox and Radio Submit Using Bootstrap</h3>
+  <div class="row">
+   <div class="col-6 mycontent-left">
+    <h6>Skills</h6>
+    <div class="form-check">
+     <input type="checkbox" name="php" class="form-check-input" value="PHP">
+     <label for="PHP" class="form-check-label">PHP</label>
+    </div>
+    <div class="form-check">
+     <input type="checkbox" name="javascript" class="form-check-input" value="Javascript">
+     <label for="Javascript" class="form-check-label">Javascript</label>
+    </div>
+    <div class="form-check">
+     <input type="checkbox" name="cplus" class="form-check-input" value="C++">
+     <label for="C++" class="form-check-label">C++</label>
+    </div>
+    <i class="text-danger small" id="checkboxValidate"></i>
+    <span>&nbsp;</span>
+    <h6 class="">Gender</h6>
+    <div class="form-check">
+     <input type="radio" class="form-check-input" name="gender" value="Male">
+     <label for="Male" class="form-check-label">Male</label>
+    </div>
+    <div class="form-check">
+     <input type="radio" name="gender" class="form-check-input" value="Female">
+     <label for="Female" class="form-check-label">Female</label>
+    </div>
+    <div class="d-block-inline">
+     <span class="text-danger small" id="mandatory"></span>
+    </div>
+    <span>&nbsp;</span>
+    <div class="form-group d-block">
+     <button id="formSubmit">Submit</button>
+     &nbsp; <button onclick='resetForm()'>Reset</button>
+    </div>
+   </div>
+   <div class="col-6">
+    <h6>Results:</h6> <i id="result"></i>
+    <p id="showResult"></p>
+   </div>
+  </div>
+ </div>
+ <!-- jQuery library -->
+ <script src="scripts.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
